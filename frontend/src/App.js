@@ -5,6 +5,7 @@ import DashboardView from './views/DashboardView';
 import RootView from './views/RootView';
 import LoginView from './views/LoginView';
 import RegisterView from './views/RegisterView';
+import SettingsView from './views/SettingsView';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/login" exact element={<LoginView />} />
         <Route path="/register" element={<RegisterView />} />
         <Route path="/dashboard" exact element={<DashboardView />} />
+        <Route path="/settings" exact element={<SettingsView />} />
+
       </Routes>
     </div>
   );
